@@ -1,0 +1,16 @@
+<fieldset>
+  <legend>router-outlet</legend>
+  <h1>Create a New Product</h1>
+  <form (submit)="onSubmit()">
+    <label>Title: 
+      <input type="text" name="title" [(ngModel)]="product.title" />
+    </label>
+    <label>Price: 
+      <input type="text" name="price" [(ngModel)]="product.price" />
+    </label>
+    <label>Image Url: 
+      <input type="text" name="image" [(ngModel)]="product.image" />
+    </label>
+    <input type="submit" value="Create" />
+  </form>
+</fieldset>

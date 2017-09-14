@@ -1,0 +1,17 @@
+<fieldset>
+  <legend>route-outlet</legend>
+  <h1>Edit Product</h1>
+  <form (submit)="onSubmit()">
+    <label>Title: 
+      <input type="text" name="title" [(ngModel)]="tempProduct.title" />
+    </label>
+    <label>Price: 
+      <input type="text" name="price" [(ngModel)]="tempProduct.price" />
+    </label>
+    <label>Image Url: 
+      <input type="text" name="image" [(ngModel)]="tempProduct.image" />
+    </label>
+    <input type="submit" value="Update" />
+    <button>Delete</button>
+  </form>
+</fieldset>
